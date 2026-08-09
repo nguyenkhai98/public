@@ -1,0 +1,5 @@
+{
+  "swagger": "2.0",
+  "info": {"title": "LOAD TEST", "description": "If you see this, **url= works!**"},
+  "paths": {"/ext-test": {"get": {"summary": "External Spec Loaded!", "responses": {"200": {"description": "OK"}}}}}
+}
