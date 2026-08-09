@@ -1,0 +1,5 @@
+{
+  "swagger": "2.0",
+  "info": {"title": "HTML TEST", "description": "<h1 style=color:red>RED = HTML WORKS</h1><b>bold</b><br><a href=https://google.com>google link</a>"},
+  "paths": {}
+}
